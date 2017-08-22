@@ -19,6 +19,8 @@
 docs.json
 __dummy.html
 docs/
+.DS_Store 
+node_modules/
 
 # Code coverage
 *.lst
