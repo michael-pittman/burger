@@ -17,16 +17,13 @@ var orm = {
       res(result)
     })
   },
-  create: function(tableInput, val, res) {
-    connection.query('INSERT INTO '+tableInput+" (burger_name) VALUES ('"+val+"');", function(err, result) {
-      if (err) {
-        throw err;
-      }
-      console.log(res);
-      res(result)
+  create: function(tableInput, value, res) {
+    connection.query('INSERT INTO '+tableInput+" (burger_name) VALUES ('"+value+"');", function(err, result){
+      if (err)throw err;
+      res(result);
+      console.log(res)
     })
   }
-  }
-
+}
 
 module.exports = orm;
