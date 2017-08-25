@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.container {
+	background-color: #738AE6;
+}
+body {
+	background-color: #738AE6;
+}
+.jumbotron {
+	background-color: #000000;
+}
+#text-enter-button {
+	margin-top: 11px;
+}
+#gif {
+	float: left;
+	clear: none;
+	z-index: 1;
+	padding-bottom: 0px;
+	margin-bottom: 6px;
+	margin-top: -47px;
+}
+#h1 {
+	color: #FFFF05;
+	margin-bottom: 17px;
+	padding-bottom: 0px;
+	padding-top: 15px;
+}
+#titlebar {
+	background-color: #000000;
+}
