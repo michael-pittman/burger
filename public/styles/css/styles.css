@@ -1,9 +1,10 @@
 @charset "UTF-8";
 .container {
-	background-color: #738AE6;
+	background-color: #000000;
 }
 body {
-	background-color: #738AE6;
+	background-color: #000000;
+    background-image: url("https://www.c64-wiki.com/images/8/89/PacMan_Animation1.gif");
 }
 .jumbotron {
 	background-color: #000000;
