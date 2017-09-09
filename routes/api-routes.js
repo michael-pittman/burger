@@ -1,4 +1,4 @@
-var db = require("../models");
+var db = require("../models/index.js");
 
 // Routes
 // =============================================================
@@ -6,7 +6,10 @@ module.exports = function(app) {
 
   // GET route for getting all of the todos
   app.get("/api/Burger", function(req, res) {
-
+    db.Post.findAll({})
+        .then(function(dbPost) {
+          res.json(dbPost);
+    });
   });
 
   // POST route for saving a new todo. You can create a todo using the data on req.body
@@ -24,3 +27,13 @@ module.exports = function(app) {
 
   });
 };
+
+
+//
+//selectAll: function (tableInput, cb) {
+// 		var queryString = 'SELECT * FROM ' + tableInput + ';';
+// 		connection.query(queryString, function (err, result) {
+// 			if (err) throw err;
+// 			cb(result);
+// 		});
+// 	},
